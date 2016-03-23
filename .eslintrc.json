@@ -84,7 +84,7 @@
     "quote-props": [ 2, "as-needed" ],
     "require-jsdoc": [ 1, { "require": { "FunctionDeclaration": true, "MethodDefinition": true, "ClassDeclaration": true } } ],
     "semi": [ 2, "always" ],
-    "sort-vars": [ 1, { "ignoreCase": true } ],
+    "sort-vars": [ 0 ],
     "spaced-comment": [ 2, "always" ],
     "strict": [2, "safe" ],
     "valid-jsdoc": [ 1 ],
