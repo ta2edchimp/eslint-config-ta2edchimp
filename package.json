@@ -6,8 +6,8 @@
   "scripts": {
     "commit": "git-cz",
     "test": "eslint .",
-    "find-new-rules": "eslint-find-new-rules ./.eslintrc.json",
-    "find-new-rules-es6": "eslint-find-new-rules ./.es6-eslintrc.json",
+    "find-new-rules": "eslint-find-new-rules",
+    "find-new-rules-es6": "eslint-find-new-rules ./es6.js",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
