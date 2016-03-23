@@ -1,0 +1,55 @@
+{
+  "name": "eslint-config-ta2edchimp",
+  "version": "0.0.0-semantically-released",
+  "description": "ESLint rules according to ta2edchimp's personal preference",
+  "main": "index.js",
+  "scripts": {
+    "commit": "git-cz",
+    "test": "eslint .",
+    "find-new-rules": "eslint-find-new-rules ./.eslintrc.json",
+    "find-new-rules-es6": "eslint-find-new-rules ./.es6-eslintrc.json",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ta2edchimp/eslint-config-ta2edchimp.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "ta2edchimp",
+    "javascript",
+    "styleguid",
+    "idiomatic"
+  ],
+  "author": "Andreas Windt <email@andreaswindt.com> (http://andreaswindt.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ta2edchimp/eslint-config-ta2edchimp/issues"
+  },
+  "homepage": "https://github.com/ta2edchimp/eslint-config-ta2edchimp#readme",
+  "peerDependencies": {
+    "eslint": "^2.0.0"
+  },
+  "devDependencies": {
+    "commitizen": "2.7.3",
+    "cz-conventional-changelog": "1.1.5",
+    "eslint-find-new-rules": "1.2.0",
+    "ghooks": "1.0.3",
+    "semantic-release": "^4.3.5",
+    "validate-commit-msg": "^2.4.1"
+  },
+  "config": {
+    "ghooks": {
+      "commit-msg": "validate-commit-msg",
+      "pre-commit": "npm run test"
+    },
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "eslint-config-idiomatic": "2.0.0"
+  }
+}
