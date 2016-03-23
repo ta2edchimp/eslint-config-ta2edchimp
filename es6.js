@@ -1,4 +1,4 @@
 /* eslint-env node */
 'use strict';
 
-module.export = require( './.es6.json' );
+module.exports = require( './.es6-eslintrc.json' );
