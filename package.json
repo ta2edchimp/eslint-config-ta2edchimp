@@ -30,7 +30,8 @@
   },
   "homepage": "https://github.com/ta2edchimp/eslint-config-ta2edchimp#readme",
   "peerDependencies": {
-    "eslint": "^2.0.0"
+    "eslint": "^2.0.0",
+    "eslint-config-idiomatic": "^2.0.0"
   },
   "devDependencies": {
     "commitizen": "2.7.3",
@@ -48,8 +49,5 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  },
-  "dependencies": {
-    "eslint-config-idiomatic": "2.0.0"
   }
 }
