@@ -6,8 +6,8 @@
   "scripts": {
     "commit": "git-cz",
     "test": "eslint .",
-    "find-new-rules": "eslint-find-new-rules",
-    "find-new-rules-es6": "eslint-find-new-rules ./es6.js",
+    "find-new-rules": "eslint-find-rules --unused",
+    "find-new-rules-es6": "eslint-find-rules --unused ./es6.js",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
@@ -30,13 +30,13 @@
   },
   "homepage": "https://github.com/ta2edchimp/eslint-config-ta2edchimp#readme",
   "peerDependencies": {
-    "eslint": "^2.0.0",
+    "eslint": "^2.0.0 || ^3.0.0",
     "eslint-config-idiomatic": "^2.0.0"
   },
   "devDependencies": {
     "commitizen": "2.7.3",
     "cz-conventional-changelog": "1.1.5",
-    "eslint-find-new-rules": "1.2.0",
+    "eslint-find-rules": "1.11.1",
     "ghooks": "1.0.3",
     "semantic-release": "^4.3.5",
     "validate-commit-msg": "^2.4.1"
